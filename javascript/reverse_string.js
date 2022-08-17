@@ -1,5 +1,11 @@
 function reverseString(str) {
-  // type your code here
+  //str = str.split('');
+
+  let array = []
+  for(let i = 0; i < str.length; i++){
+    array.unshift(str[i])
+  }
+  return array.join('');
 }
 
 if (require.main === module) {
